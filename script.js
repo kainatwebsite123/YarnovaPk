@@ -1,12 +1,7 @@
-console.log("Yarnova is preparing for launch 🚀");
+const buttons = document.querySelectorAll("button");
 
-/* Floating stars effect */
-
-const stars = document.querySelector(".stars");
-
-let position = 0;
-
-setInterval(() => {
-  position += 1;
-  stars.style.backgroundPosition = `${position}px ${position}px`;
-}, 50);
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    alert("Item added to cart!");
+  });
+});
