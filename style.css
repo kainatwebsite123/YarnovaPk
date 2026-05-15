@@ -1,113 +1,60 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-body{
-  height:100vh;
+body {
   font-family: Arial, sans-serif;
-  overflow:hidden;
-
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
-  background: radial-gradient(circle at top, #2a0b4f, #000);
-  color:white;
+  margin: 0;
+  background: #fff8f5;
+  color: #333;
 }
 
-/* STAR BACKGROUND */
-.stars{
-  position:absolute;
-  width:100%;
-  height:100%;
-  background-image: radial-gradient(white 1px, transparent 1px);
-  background-size:60px 60px;
-  opacity:0.25;
-  animation: moveStars 80s linear infinite;
+header {
+  background: #d98ca3;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes moveStars{
-  from {transform: translateY(0);}
-  to {transform: translateY(-1000px);}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
 }
 
-/* MAIN LAYOUT */
-.main{
-  text-align:center;
-  z-index:2;
+.hero {
+  text-align: center;
+  padding: 60px 20px;
 }
 
-/* TITLE */
-.title{
-  font-size:4rem;
-  letter-spacing:6px;
-  color:#e8c7ff;
-  text-shadow:0 0 20px #b56cff;
+.products {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
-/* CARD BOX */
-.card{
-  margin-top:25px;
-  padding:50px;
-  width:700px;
-  max-width:90%;
-
-  background: rgba(255,255,255,0.08);
-  border:1px solid rgba(255,255,255,0.2);
-  border-radius:25px;
-
-  backdrop-filter: blur(12px);
-  box-shadow: 0 0 40px rgba(160,90,255,0.3);
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* COMING SOON TEXT */
-.card h2{
-  font-size:3rem;
-  margin-bottom:20px;
+.card img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-/* QUOTE */
-.quote{
-  color:#e9d6ff;
-  margin-bottom:30px;
-}
-
-/* ROBOT */
-.robot{
-  margin-top:20px;
-}
-
-.emoji{
-  font-size:3rem;
-  animation: float 3s ease-in-out infinite;
-}
-
-.chat{
-  margin-top:15px;
-  padding:15px;
-  border-radius:15px;
-  background:rgba(0,0,0,0.3);
-}
-
-.answer{
-  margin-top:10px;
-  font-weight:bold;
-}
-
-/* FLOAT ANIMATION */
-@keyframes float{
-  0%{transform:translateY(0);}
-  50%{transform:translateY(-10px);}
-  100%{transform:translateY(0);}
+button {
+  background: #d98ca3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 
-
-
-
-
-
-
+ 
 
