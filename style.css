@@ -1,24 +1,23 @@
-body{
-  background: red !important;
-}
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
 }
+
 body{
   height:100vh;
   font-family: Arial, sans-serif;
+  overflow:hidden;
+
   display:flex;
   justify-content:center;
   align-items:center;
-  overflow:hidden;
 
   background: radial-gradient(circle at top, #2a0b4f, #000);
   color:white;
 }
 
-/* stars background */
+/* STAR BACKGROUND */
 .stars{
   position:absolute;
   width:100%;
@@ -26,7 +25,7 @@ body{
   background-image: radial-gradient(white 1px, transparent 1px);
   background-size:60px 60px;
   opacity:0.25;
-  animation: moveStars 60s linear infinite;
+  animation: moveStars 80s linear infinite;
 }
 
 @keyframes moveStars{
@@ -34,12 +33,13 @@ body{
   to {transform: translateY(-1000px);}
 }
 
-/* main container */
+/* MAIN LAYOUT */
 .main{
   text-align:center;
   z-index:2;
 }
 
+/* TITLE */
 .title{
   font-size:4rem;
   letter-spacing:6px;
@@ -47,7 +47,7 @@ body{
   text-shadow:0 0 20px #b56cff;
 }
 
-/* glass card */
+/* CARD BOX */
 .card{
   margin-top:25px;
   padding:50px;
@@ -62,16 +62,19 @@ body{
   box-shadow: 0 0 40px rgba(160,90,255,0.3);
 }
 
+/* COMING SOON TEXT */
 .card h2{
   font-size:3rem;
   margin-bottom:20px;
 }
 
+/* QUOTE */
 .quote{
   color:#e9d6ff;
   margin-bottom:30px;
 }
 
+/* ROBOT */
 .robot{
   margin-top:20px;
 }
@@ -93,11 +96,18 @@ body{
   font-weight:bold;
 }
 
+/* FLOAT ANIMATION */
 @keyframes float{
   0%{transform:translateY(0);}
   50%{transform:translateY(-10px);}
   100%{transform:translateY(0);}
 }
-  
 
-    
+
+
+
+
+
+
+
+
