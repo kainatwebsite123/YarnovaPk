@@ -1,0 +1,57 @@
+/* Robot Section */
+
+.robot-box{
+  margin-top:45px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+}
+
+.robot-face{
+  font-size:4rem;
+
+  animation: float 3s ease-in-out infinite;
+}
+
+.chat-box{
+  background: rgba(255,255,255,0.08);
+
+  border:1px solid rgba(255,255,255,0.15);
+
+  padding:20px;
+  border-radius:20px;
+
+  width:320px;
+  max-width:90%;
+
+  box-shadow:
+    0 0 20px rgba(174,91,255,0.3);
+}
+
+.question{
+  font-size:1rem;
+  color:#f5d7ff;
+  margin-bottom:12px;
+}
+
+.answer{
+  font-size:1.2rem;
+  color:white;
+  font-weight:bold;
+}
+
+@keyframes float{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-10px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+}
